@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core'
-import { HeroesComponent } from './heroes.component'
+import { ROUTER_DIRECTIVES } from '@angular/router'
 
 @Component({
 	selector: 'my-app',
-	template: `
-		<h1>{{ title }}</h1>
-		<heroes-list></heroes-list>
-	`,
-	directives: [ HeroesComponent ]
+	templateUrl: 'app/views/app.component.html',
+	styleUrls: [ 'app/styles/app.component.css' ],
+	directives: [ ROUTER_DIRECTIVES ],
 })
+
 export class AppComponent {
 
 	title = "Tour of Heroes";
